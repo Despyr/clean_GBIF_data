@@ -23,14 +23,10 @@ library(tmap)
 
 
 ##########################################Directories defs##########################################
-#definition of the directories to be used
-#creation of the list of useful directories
 
 d <- list()
-d$gb <- "D:/bamboodata/source/grassbasebrut/"
 d$wcvp <- "D:/bamboodata/source/theworldchecklistbrut/"
 d$sql <- "D:/bamboodata/"
-d$mnc <- "D:/bamboodata/source/menace/"
 d$shp <- "D:/bamboodata/source/TDWG/level3/"
 
 con <- dbConnect(RSQLite::SQLite(), paste0(d$sql,"bamboo.sqlite")) ## will make, if not present
